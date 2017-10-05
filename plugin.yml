@@ -1,0 +1,21 @@
+name: ${project.name}
+version: ${project.version}
+author: totemo
+authors: []
+description: ${project.description}
+website: ${project.url}
+main: io.totemo.schemaccess.SchemAccess
+
+permissions:
+  schemaccess.console:
+    description: Permission to administer the plugin at the console.
+    default: op
+
+commands:
+  schemaccess:
+    description: ${project.name} administrative command.
+    permission: schemaccess.console
+    usage: |
+    
+      §e/<command> help§f - Show usage help.
+      §e/<command> reload§f - Reload the configuration.
